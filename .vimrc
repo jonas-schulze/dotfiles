@@ -38,6 +38,11 @@ command WQ wq
 command Wq wq
 command Q q
 command W w
+command QA qa
+command Qa qa
+command WQA wqa
+command WQa wqa
+command Wqa wqa
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
