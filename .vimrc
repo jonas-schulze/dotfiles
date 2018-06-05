@@ -81,6 +81,9 @@ let &showbreak = '+++ '
 " Allow jumping within wrapped lines
 nnoremap j gj
 nnoremap k gk
+" Use space to toggle folds
+set foldmethod=syntax
+nnoremap <space> za
 
 " Highlight searches
 set hlsearch
