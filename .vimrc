@@ -83,6 +83,7 @@ nnoremap j gj
 nnoremap k gk
 " Use space to toggle folds
 set foldmethod=syntax
+set foldlevelstart=20
 nnoremap <space> za
 
 " Highlight searches
