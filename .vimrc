@@ -1,7 +1,13 @@
 set nocompatible
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
-Plug 'altercation/vim-colors-solarized'
+Plug 'flazz/vim-colorschemes'
 Plug 'scrooloose/nerdtree'
 "Plug 'junegunn/vim-easy-align'
 Plug 'lervag/vimtex'
@@ -18,6 +24,7 @@ Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
+set termguicolors
 filetype plugin indent on
 
 let maplocalleader = '-'
