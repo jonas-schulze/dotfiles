@@ -8,4 +8,4 @@ set number
 set ruler
 
 " Show page guide
-let &colorcolumn=join(range(81,999),",")
+let &colorcolumn=join(range(81,199),",")
