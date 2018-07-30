@@ -9,3 +9,6 @@ set ruler
 
 " Show page guide
 let &colorcolumn=join(range(81,199),",")
+
+" Disable highlighting of line numbers and page guide
+set notermguicolors

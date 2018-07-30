@@ -24,7 +24,6 @@ Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
-set termguicolors
 filetype plugin indent on
 
 let maplocalleader = '-'
