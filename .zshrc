@@ -13,7 +13,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 
 # Load the theme.
-antigen theme agnoster
+antigen theme bhilburn/powerlevel9k
 
 # Tell Antigen that you're done.
 antigen apply
