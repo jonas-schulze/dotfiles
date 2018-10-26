@@ -14,6 +14,9 @@ Plug 'lervag/vimtex'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 "if has('nvim')
   "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "else
