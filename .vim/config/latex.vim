@@ -11,3 +11,6 @@ let g:vimtex_quickfix_latexlog = {
       \   'default' : 0,
       \ },
       \}
+
+" Disable callbacks
+let g:vimtex_compiler_latexmk = {'callback' : 0}
