@@ -13,6 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'lervag/vimtex'
 Plug 'Valloric/YouCompleteMe'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -25,7 +26,20 @@ Plug 'junegunn/fzf.vim'
   "Plug 'roxma/vim-hug-neovim-rpc'
 "endif
 
+Plug 'fatih/vim-go'
+Plug 'JuliaEditorSupport/julia-vim'
+
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
+
+" GitGutter is updated after the swap file has been written to disk
+set updatetime=100
+
+" Let vim-go manage imports as well
+let g:go_fmt_command = "goimports"
+
+" Ensure editorconfig-vim works well with fugitive
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 filetype plugin indent on
 

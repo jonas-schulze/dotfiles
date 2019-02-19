@@ -18,6 +18,8 @@ antigen theme bhilburn/powerlevel9k
 # Tell Antigen that you're done.
 antigen apply
 
+export PATH="${HOME}/bin:$(go env GOPATH)/bin:${PATH}"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # TODO: Without this fzf will go crazy .. and I have no idea why. I assume there
 # might be some cyclic links in ~/Library. The results should be identical to
