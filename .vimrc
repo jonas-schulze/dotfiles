@@ -100,14 +100,14 @@ set list
 set linebreak
 " Indent and highlight subsequent lines
 set breakindent
-let &showbreak = '+++ '
+let &showbreak = '↳ '
 " Allow jumping within wrapped lines
 nnoremap j gj
 nnoremap k gk
 " Use space to toggle folds
 set foldmethod=syntax
 set foldlevelstart=20
-nnoremap <space> za
+"nnoremap <space> za
 
 " Highlight searches
 set hlsearch
