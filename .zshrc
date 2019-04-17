@@ -1,4 +1,14 @@
-source /usr/local/share/antigen/antigen.zsh
+if [ -f /usr/local/share/antigen/antigen.zsh ]
+then
+  source /usr/local/share/antigen/antigen.zsh
+elif [ -f ~/.antigen.zsh ]
+then
+  source ~/.antigen.zsh
+else
+  curl -L git.io/antigen > ~/.antigen.zsh
+  source ~/.antigen.zsh
+fi
+
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -29,3 +39,6 @@ export PATH="${HOME}/bin:$(go env GOPATH)/bin:${PATH}"
 # might be some cyclic links in ~/Library. The results should be identical to
 # `find . -type f`.
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --no-ignore'
+
+# Managing dotfiles:
+alias dotfiles='git --git-dir=$HOME/projects/dotfiles.git --work-tree=$HOME'
