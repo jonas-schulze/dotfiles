@@ -67,6 +67,9 @@ command WQA wqa
 command WQa wqa
 command Wqa wqa
 
+" Disable hlsearch
+nnoremap <Esc><Esc> :noh<Enter>
+
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
