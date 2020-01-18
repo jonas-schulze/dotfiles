@@ -42,3 +42,11 @@ export FZF_DEFAULT_COMMAND='fd --type f --hidden --no-ignore'
 
 # Managing dotfiles:
 alias dotfiles='git --git-dir=$HOME/projects/dotfiles.git --work-tree=$HOME'
+
+# Managing private tokens; don't forget to `chmod go-rwx` that stuff!
+if [ -f ~/.config/private/tokens.sh ]
+then
+  source ~/.config/private/tokens.sh
+else
+  echo "No tokens loaded."
+fi
